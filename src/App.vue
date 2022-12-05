@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <PrimaryButton text="Clique aqui" :click="funcaoClique"/>
+    <PrimaryButton text="Clique aqui" :click="funcaoClique" disabled/>
+    <PrimaryButton text="desabilitado" :click="funcaoClique" :disabled="false"/>
   </div>
 </template>
 

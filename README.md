@@ -1,4 +1,12 @@
-# storybook-vue
+## storybook-vue
+```
+npm storybook init
+```
+
+## storybook run
+```
+npm run storybook 
+```
 
 ## Project setup
 ```

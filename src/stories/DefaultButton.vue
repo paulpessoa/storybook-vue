@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'PrimaryButton',
+  name: 'DefaultButton',
   props: {
     text: String,
     click: Function,
