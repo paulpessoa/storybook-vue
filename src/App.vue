@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PrimaryButton text="Clique aqui" :click="funcaoClique"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PrimaryButton from './components/PrimaryButton.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PrimaryButton
+  },
+  methods: {
+    funcaoClique() {
+      alert('Clicou no botão')
+    }
   }
 }
 </script>
