@@ -1,15 +1,29 @@
+import DefaultButton from '../components/DefaultButton';
+
 export default {
-  title: 'Example/DefaultButton'
+  title: 'Example/Botoes/Default',
+  component: DefaultButton, 
+  argTypes: {
+    text: { control: 'text' },
+    backgroundColor: { control: 'color' },
+    disabled: { control: 'boolean' },
+    click: { action: 'clicked' },
+  },
 }
 
-export const vueComponent = () => ({
-  template: '<h2>Default Button</h2>'
+export const Default = () => ({
+  components: { DefaultButton },
+  template: '<DefaultButton :disabled="disabled" :text="text" :backgroundColor="backgroundColor" />',  
 })
 
-export const pureTemplate = () => '<h2>Default Button</h2>'
+// export const Default = () => ({
+//   render() {
+//     return <DefaultButton text="ssss"/>
+//   }  
+// })
 
-export const renderFunctionJSX = () => ({
-  render() {
-    return <h2>Default Button</h2>
-  }
-})
+
+
+
+
+  

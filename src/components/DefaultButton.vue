@@ -1,5 +1,5 @@
 <template>
-  <button :disabled="disabled" @click="click">{{ text }} </button>
+  <button :disabled="disabled" @click="clicked">{{ text }} </button>
 </template>
 
 <script>
@@ -8,9 +8,15 @@ export default {
   props: {
     text: String,
     click: Function,
+    backgroundColor: String,
     disabled:{
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    clicked() {
+      this.$emit('clickemit');
     }
   }
 }

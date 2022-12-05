@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <PrimaryButton text="Clique aqui" :click="funcaoClique" disabled/>
-    <PrimaryButton text="desabilitado" :click="funcaoClique" :disabled="false"/>
+    <DefaultButton text="Clique aqui" :click="funcaoClique" disabled/>
+    <DefaultButton text="desabilitado" :click="funcaoClique" :disabled="false"/>
   </div>
 </template>
 
 <script>
-import PrimaryButton from './components/PrimaryButton.vue'
+import DefaultButton from './components/DefaultButton.vue'
 
 export default {
   name: 'App',
   components: {
-    PrimaryButton
+    DefaultButton
   },
   methods: {
     funcaoClique() {
