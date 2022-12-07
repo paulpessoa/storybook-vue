@@ -10,6 +10,8 @@ module.exports = {
     "@storybook/addon-notes",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "@storybook/addon-viewport",
+    "@storybook/addon-a11y",
   ],
 
   "framework": "@storybook/vue",

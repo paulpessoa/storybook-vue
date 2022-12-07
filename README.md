@@ -11,6 +11,7 @@ npm run storybook
 ## storybook addons
 ```
 npm install -D @storybook/addon-viewport
+npm install -D @storybook/addon-a11y
 ```
 
 ## Project setup
