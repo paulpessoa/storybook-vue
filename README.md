@@ -8,6 +8,11 @@ npm storybook init
 npm run storybook 
 ```
 
+## storybook addons
+```
+npm install -D @storybook/addon-viewport
+```
+
 ## Project setup
 ```
 npm install

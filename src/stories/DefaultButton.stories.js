@@ -1,8 +1,9 @@
 import DefaultButton from '../components/DefaultButton';
 
 export default {
-  title: 'Example/Botoes/Default',
+  title: 'Example/Botoes',
   component: DefaultButton, 
+  decorators: [ () => ({ template: '<div style="margin: 3em; background: yellow"><story/></div>' }) ],
   argTypes: {
     text: { control: 'text' },
     backgroundColor: { control: 'color' },
@@ -11,19 +12,29 @@ export default {
   },
 }
 
-export const Default = () => ({
+export const simple = () => ({
+  render() {
+    return <DefaultButton text="Simples" />;
+  },
+});
+
+simple.story = {name: 'Simples Demáis'};
+
+
+export const simpleWithTemplate = () => ({
   components: { DefaultButton },
-  template: '<DefaultButton :disabled="disabled" :text="text" :backgroundColor="backgroundColor" />',  
-})
-
-// export const Default = () => ({
-//   render() {
-//     return <DefaultButton text="ssss"/>
-//   }  
-// })
+  template: '<DefaultButton text="simples com template" />',
+});
 
 
+export const withText = () => ({
+  render() {
+    return <DefaultButton text="Apenas um texto" />;
+  }
+});
 
-
-
-  
+export const withTooLong = () => ({
+  render() {
+    return <DefaultButton text="Texto muito longo" />;
+  }
+});
